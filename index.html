@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Форма</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+  </head>
+  <body>
+    <div class="form">
+      <div class="title"><h1>Форма заказа</h1></div>
+      <div class="personBox">
+        <div class="person active" id="naturalPerson">Физ. лицо</div>
+        <div class="person" id="legalPerson">Юр. лицо</div>
+      </div>
+      <div class="input"  id="name">
+        <div class="text">Имя</div>
+        <input type="text" autocomplete="off">
+      </div>
+      <div class="input" id="surname">
+        <div class="text">Фамилия</div>
+        <input type="text" autocomplete="off" >
+      </div>
+      <div class="input"  id="contract">
+        <div class="text">Номер контракта</div>
+        <input type="text" autocomplete="off" >
+      </div>
+
+      <div class="numberBox">
+        <div class="text">Телефон</div>
+        <div id="region" class="region">+7</div>
+        <input type="text" id="number" autocomplete="off" value="(___)___-____">
+        <div class="regionBox" id="regionBox">
+          <div class="regionSelect activeRegion">+7</div>
+          <div class="regionSelect">+8</div>
+          <div class="regionSelect">+9</div>
+        </div>
+      </div>
+      <div class="button" id="send">
+        Отправить 
+      </div>
+    </div>
+    <script src="scripts/selectPerson.js"></script>
+    <script src="scripts/numberInput.js"></script>
+    <script src="scripts/selectNumberRegion.js"></script>
+    <script src="scripts/formSend.js"></script>
+  </body>
+</html>
