@@ -71,6 +71,7 @@ body{
     line-height: 38px;
     margin-top: 6px;
     border-right: 1px solid rgb(80, 25, 4);
+    cursor: pointer;
 }
 .numberBox input{
     width: 350px;
